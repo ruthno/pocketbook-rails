@@ -2,12 +2,13 @@ html, body {
   margin: 0;
   padding: 0;
   font-family: 'Montserrat', sans-serif;
-  background: url("http://s3.amazonaws.com/codecademy-content/projects/pocketbook/bg.jpg") no-repeat center center fixed;
+  background: url(<% image_tag 'bg.jpg' %>) no-repeat center center fixed;
   background-size: cover;
 }
 
 .container {
   width: 940px;
+  padding-top: 50px;
 }
 
 .logo {
@@ -43,7 +44,6 @@ h1 {
  background-color: #245C4D;
  color: #fff;
  border: none;
- margin-left: 120px;
  margin: 30px 120;
 }
 
@@ -54,5 +54,6 @@ li {
 }
 
 ul {
-padding-left: 120px;
+ margin: 0;
+ padding: 0;
 }

@@ -1,6 +1,7 @@
 class PagesController < ApplicationController
-    def signup
-    end
+    
+    before_action :require_user, except: [:contact, :help]
+    
     
     def contact
     end
