@@ -9,7 +9,7 @@ class SessionsController < ApplicationController
            session[:user_id] = user.id
            redirect_to('/about')
        else
-           redirect_to('/login')
+           redirect_to('/contact')
        end
     end
     
